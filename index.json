@@ -3,14 +3,11 @@
     "name": "create-react-app",
     "displayName": "NodeJS Runtime",
     "description": "Stack with CRA",
-    "tags": [
-      "NodeJS",
-      "ubi8"
-    ],
+    "tags": ["NodeJS", "ubi8"],
     "projectType": "nodejs",
     "language": "nodejs",
     "links": {
-      "self": "/devfiles/cra/devfile.yaml"
+      "self": "/cra/devfile.yaml"
     }
   }
 ]

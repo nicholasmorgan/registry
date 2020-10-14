@@ -23,7 +23,7 @@ commands:
   - id: install
     exec:
       component: runtime
-      commandLine: npm install && npm install -g serve && npm run build
+      commandLine: npm install
       workingDir: /project
       group:
         kind: build
@@ -31,7 +31,7 @@ commands:
   - id: run
     exec:
       component: runtime
-      commandLine: serve -s build -l 3000
+      commandLine: npm start
       workingDir: /project
       group:
         kind: run
