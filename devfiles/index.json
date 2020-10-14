@@ -1,6 +1,6 @@
 [
   {
-    "name": "CRA",
+    "name": "create-react-app",
     "displayName": "Create React App",
     "description": "Stack for CRA",
     "tags": ["NodeJS", "React", "ubi8"],
