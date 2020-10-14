@@ -1,4 +1,4 @@
-name: nodejs
+name: create-react-app
 displayName: NodeJS Runtime
 description: Stack with CRA
 tags: ["NodeJS", "Express", "ubi8"]
