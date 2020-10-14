@@ -1,0 +1,13 @@
+[
+  {
+    "name": "CRA",
+    "displayName": "Create React App",
+    "description": "Stack with NodeJS 12",
+    "tags": ["NodeJS", "React", "ubi8"],
+    "projectType": "nodejs",
+    "language": "nodejs",
+    "links": {
+      "self": "/devfiles/nodejs/devfile.yaml"
+    }
+  }
+]
