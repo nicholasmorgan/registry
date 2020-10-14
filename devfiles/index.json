@@ -1,9 +1,12 @@
 [
   {
     "name": "create-react-app",
-    "displayName": "Create React App",
-    "description": "Stack for CRA",
-    "tags": ["NodeJS", "React", "ubi8"],
+    "displayName": "NodeJS Runtime",
+    "description": "Stack with CRA",
+    "tags": [
+      "NodeJS",
+      "ubi8"
+    ],
     "projectType": "nodejs",
     "language": "nodejs",
     "links": {

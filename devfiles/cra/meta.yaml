@@ -1,6 +1,6 @@
 name: create-react-app
 displayName: NodeJS Runtime
 description: Stack with CRA
-tags: ["NodeJS", "Express", "ubi8"]
+tags: ["NodeJS", "ubi8"]
 projectType: "nodejs"
 language: "nodejs"
