@@ -2,6 +2,7 @@ schemaVersion: 2.0.0
 metadata:
   name: create-react-app
   version: 1.0.0
+starterProjects:
   - name: nodejs-starter
     git:
       remotes:
@@ -19,8 +20,8 @@ components:
 commands:
   - id: install
     exec:
-      component: runtime 
-      commandLine: npm install && npm install -g serve 
+      component: runtime
+      commandLine: npm install && npm install -g serve
       workingDir: /project
       group:
         kind: build
@@ -43,11 +44,11 @@ commands:
         isDefault: true
   - id: build
     composite:
-         label: Build 
-         commands:
-           - install
-           - build
-         parallel: false
-         group: 
-            kind: build
-            isDefault: true
+      label: Build
+      commands:
+        - install
+        - build
+      parallel: false
+      group:
+        kind: build
+        isDefault: true
