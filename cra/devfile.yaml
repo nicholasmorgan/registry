@@ -2,9 +2,6 @@ schemaVersion: 2.0.0
 metadata:
   name: create-react-app
   version: 1.0.0
-  alpha.build-dockerfile: "https://raw.githubusercontent.com/odo-devfiles/registry/master/devfiles/nodejs/build/Dockerfile"
-  alpha.deployment-manifest: "https://raw.githubusercontent.com/odo-devfiles/registry/master/devfiles/nodejs/deploy/deployment-manifest.yaml"
-starterProjects:
   - name: nodejs-starter
     git:
       remotes:
@@ -22,12 +19,20 @@ components:
 commands:
   - id: install
     exec:
-      component: runtime
-      commandLine: npm install
+      component: runtime 
+      commandLine: npm install && npm install -g serve 
       workingDir: /project
       group:
         kind: build
-        isDefault: true
+        isDefault: false
+  - id: build
+    exec:
+      component: runtime
+      commandLine: npm run build
+      workingDir: /project
+      group:
+        kind: build
+        isDefault: false
   - id: run
     exec:
       component: runtime
@@ -36,19 +41,13 @@ commands:
       group:
         kind: run
         isDefault: true
-  - id: debug
-    exec:
-      component: runtime
-      commandLine: npm run debug
-      workingDir: /project
-      group:
-        kind: debug
-        isDefault: true
-  - id: test
-    exec:
-      component: runtime
-      commandLine: npm test
-      workingDir: /project
-      group:
-        kind: test
-        isDefault: true
+  - id: build
+    composite:
+         label: Build 
+         commands:
+           - install
+           - build
+         parallel: false
+         group: 
+            kind: build
+            isDefault: true
