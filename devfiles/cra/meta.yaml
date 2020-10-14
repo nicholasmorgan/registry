@@ -1,6 +1,6 @@
 name: nodejs
 displayName: NodeJS Runtime
-description: Stack with NodeJS 12
+description: Stack with CRA
 tags: ["NodeJS", "Express", "ubi8"]
 projectType: "nodejs"
 language: "nodejs"
