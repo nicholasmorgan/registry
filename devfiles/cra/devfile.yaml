@@ -26,7 +26,7 @@ commands:
       group:
         kind: build
         isDefault: false
-  - id: buildProduction
+  - id: buildForProduction
     exec:
       component: runtime
       commandLine: npm run build
@@ -42,12 +42,12 @@ commands:
       group:
         kind: run
         isDefault: true
-  - id: build
+  - id: InstallAndBuild
     composite:
       label: Build
       commands:
         - install
-        - buildProduction
+        - buildForProduction
       parallel: false
       group:
         kind: build
