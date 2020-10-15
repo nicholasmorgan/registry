@@ -7,7 +7,7 @@
     "projectType": "cra",
     "language": "js",
     "links": {
-      "self": "/devfiles//cra/devfile.yaml"
+      "self": "/devfiles/create-react-app/devfile.yaml"
     }
   }
 ]
