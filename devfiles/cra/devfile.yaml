@@ -37,7 +37,7 @@ commands:
   - id: run
     exec:
       component: runtime
-      commandLine: npm start
+      commandLine: serve -s build -l 3000
       workingDir: /project
       group:
         kind: run
