@@ -7,7 +7,7 @@
     "projectType": "nodejs",
     "language": "nodejs",
     "links": {
-      "self": "/cra/devfile.yaml"
+      "self": "/devfiles//cra/devfile.yaml"
     }
   }
 ]
