@@ -2,7 +2,7 @@
   {
     "name": "create-react-app",
     "displayName": "Create React App",
-    "description": "Stack with CRA",
+    "description": "Stack with production CRA",
     "tags": ["NodeJS", "ubi8"],
     "projectType": "cra",
     "language": "js",
